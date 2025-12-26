@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function AboutUs() {
   return (
     <>
       <Head>
-        <title>À propos de MR Partners - Cabinet d'expertise comptable</title>
+        <title>À propos de MR Partners - Cabinet d&apos;expertise comptable</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -16,16 +17,16 @@ export default function AboutUs() {
         <div className="max-w-7xl mx-auto px-6 lg:px-16">
           <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0 flex items-center">
-              <a href="/" className="logo-link">
+              <Link href="/" className="logo-link">
                 <img src="/logo.jpg" alt="MR Partners Logo" className="h-12 w-auto transition-transform duration-200 ease-out origin-left hover:scale-105" />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:flex space-x-10">
-              <a href="/" className="text-gray-600 hover:text-blue-500 transition text-sm">Accueil</a>
-              <a href="/aboutus" className="text-gray-600 hover:text-blue-500 transition text-sm">À propos</a>
-              <a href="/#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</a>
-              <a href="/#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</a>
-              <a href="/contact" className="text-gray-600 hover:text-blue-500 transition text-sm">Contact</a>
+              <Link href="/" className="text-gray-600 hover:text-blue-500 transition text-sm">Accueil</Link>
+              <Link href="/aboutus" className="text-gray-600 hover:text-blue-500 transition text-sm">À propos</Link>
+              <Link href="/#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</Link>
+              <Link href="/#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</Link>
+              <Link href="/contact" className="text-gray-600 hover:text-blue-500 transition text-sm">Contact</Link>
             </div>
             <button className="md:hidden text-gray-700" id="mobile-menu-btn">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,11 +37,11 @@ export default function AboutUs() {
         </div>
         <div className="hidden md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <a href="/" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Accueil</a>
-            <a href="/aboutus" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">À propos</a>
+            <Link href="/" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Accueil</Link>
+            <Link href="/aboutus" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">À propos</Link>
             <a href="#services" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Services</a>
             <a href="#specialisations" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Spécialisations</a>
-            <a href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Contact</a>
+            <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Contact</Link>
           </div>
         </div>
       </nav>
@@ -54,15 +55,15 @@ export default function AboutUs() {
             
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Cabinet d'expertise comptable
+                Cabinet d&apos;expertise comptable
               </p>
               
               <p className="text-base text-gray-700 leading-relaxed mb-6">
-                MR PARTNERS est un cabinet d’experts-comptables (fiscal) certifié ITAA où l’excellence rencontre l’expertise. Notre équipe dévouée de professionnels comptables est fière de fournir à votre entreprise le temps et les efforts qu’elle mérite vraiment. Grâce à nos solutions innovantes et à notre attention méticuleuse aux détails, nous nous engageons à vous aider.
+                MR PARTNERS est un cabinet d&apos;experts-comptables (fiscal) certifié ITAA où l&apos;excellence rencontre l&apos;expertise. Notre équipe dévouée de professionnels comptables est fière de fournir à votre entreprise le temps et les efforts qu&apos;elle mérite vraiment. Grâce à nos solutions innovantes et à notre attention méticuleuse aux détails, nous nous engageons à vous aider.
               </p>
               
               <p className="text-base text-gray-700 leading-relaxed">
-                Nous travaillons en étroite collaboration avec nos clients et agissons pour un large éventail d'entreprises et de particuliers. Outre les services de comptabilité plus généraux, nous pouvons également vous aider avec le développement des affaires et les services fiscaux spécialisés. Nous apprécions que ce n'est qu'avec le temps que nous pouvons gagner votre confiance, afin que vous sachiez que lorsque nous disons que nous pouvons et allons faire quelque chose, nous le faisons.
+                Nous travaillons en étroite collaboration avec nos clients et agissons pour un large éventail d&apos;entreprises et de particuliers. Outre les services de comptabilité plus généraux, nous pouvons également vous aider avec le développement des affaires et les services fiscaux spécialisés. Nous apprécions que ce n&apos;est qu&apos;avec le temps que nous pouvons gagner votre confiance, afin que vous sachiez que lorsque nous disons que nous pouvons et allons faire quelque chose, nous le faisons.
               </p>
             </div>
           </div>
@@ -73,7 +74,7 @@ export default function AboutUs() {
         {/* Business Hours Section */}
         <section className="py-16 px-6 bg-gray-50">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl text-center text-black font-normal mb-12">Horaires d'ouverture</h2>
+            <h2 className="text-3xl md:text-4xl text-center text-black font-normal mb-12">Horaires d&apos;ouverture</h2>
             
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-sm">
               <div className="flex items-center mb-6">
@@ -180,7 +181,7 @@ export default function AboutUs() {
                     <svg className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <span className="text-gray-700">Plus de 20 ans d'expérience</span>
+                    <span className="text-gray-700">Plus de 20 ans d&apos;expérience</span>
                   </div>
                   <div className="flex items-center">
                     <svg className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

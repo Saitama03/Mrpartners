@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,16 +18,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-16">
           <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0 flex items-center">
-              <a href="/" className="logo-link">
+              <Link href="/" className="logo-link">
                 <img src="/logo.jpg" alt="MR Partners Logo" className="h-12 w-auto transition-transform duration-200 ease-out origin-left hover:scale-105" />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:flex space-x-10">
               <a href="#accueil" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Accueil</a>
-              <a href="/aboutus" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">À propos</a>
+              <Link href="/aboutus" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">À propos</Link>
               <a href="#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</a>
               <a href="#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</a>
-              <a href="/contact" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Contact</a>
+              <Link href="/contact" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Contact</Link>
             </div>
             <button className="md:hidden text-gray-700" id="mobile-menu-btn">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,10 +39,10 @@ export default function Home() {
         <div className="hidden md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
             <a href="#accueil" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Accueil</a>
-            <a href="/aboutus" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">À propos</a>
+            <Link href="/aboutus" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">À propos</Link>
             <a href="#services" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Services</a>
             <a href="#specialisations" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Spécialisations</a>
-            <a href="/contact" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Contact</a>
+            <Link href="/contact" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Contact</Link>
           </div>
         </div>
       </nav>
@@ -96,10 +97,10 @@ export default function Home() {
                   <div className="backgroundimg w-full h-full" style={{ backgroundImage: "url('/accounting.png?v=1')" }}></div>
                   <div className="service-overlay">
                     <h3 className="text-2xl text-white font-semibold uppercase mb-4">Comptabilité</h3>
-                    <p className="text-sm text-white text-center mb-6 px-4">MR Partners vous propose leurs services d'experts en matière de comptabilité.</p>
-                    <a href="/comptabilite" className="cta-button bg-amber-500 text-white text-sm font-medium py-2 px-8 rounded-full transition">
+                    <p className="text-sm text-white text-center mb-6 px-4">MR Partners vous propose leurs services d&apos;experts en matière de comptabilité.</p>
+                    <Link href="/comptabilite" className="cta-button bg-amber-500 text-white text-sm font-medium py-2 px-8 rounded-full transition">
                       <span className="cta-button-text">SAVOIR PLUS</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-label bg-white border-l-2 border-r-2 border-b-2 border-amber-500 text-center py-4">
@@ -114,9 +115,9 @@ export default function Home() {
                   <div className="service-overlay">
                     <h3 className="text-2xl text-white font-semibold uppercase mb-4">Fiscalité</h3>
                     <p className="text-sm text-white text-center mb-6 px-4">Nos services spécialisés se concentrent sur l&apos;optimisation de votre stratégie fiscale.</p>
-                    <a href="/fiscalite" className="cta-button bg-amber-500 text-white text-sm font-medium py-2 px-8 rounded-full transition">
+                    <Link href="/fiscalite" className="cta-button bg-amber-500 text-white text-sm font-medium py-2 px-8 rounded-full transition">
                       <span className="cta-button-text">SAVOIR PLUS</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-label bg-white border-l-2 border-r-2 border-b-2 border-amber-500 text-center py-4">
@@ -130,10 +131,10 @@ export default function Home() {
                   <div className="backgroundimg w-full h-full" style={{ backgroundImage: "url('/audit.png?v=1')" }}></div>
                   <div className="service-overlay">
                     <h3 className="text-2xl text-white font-semibold uppercase mb-4">Audit</h3>
-                    <p className="text-sm text-white text-center mb-6 px-4">MR Partners propose des solutions d'audit personnalisées et efficaces.</p>
-                    <a href="/audit" className="cta-button bg-amber-500 text-white text-sm font-medium py-2 px-8 rounded-full transition">
+                    <p className="text-sm text-white text-center mb-6 px-4">MR Partners propose des solutions d&apos;audit personnalisées et efficaces.</p>
+                    <Link href="/audit" className="cta-button bg-amber-500 text-white text-sm font-medium py-2 px-8 rounded-full transition">
                       <span className="cta-button-text">SAVOIR PLUS</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-label bg-white border-l-2 border-r-2 border-b-2 border-amber-500 text-center py-4">
@@ -147,10 +148,10 @@ export default function Home() {
                   <div className="backgroundimg w-full h-full" style={{ backgroundImage: "url('/hero_main.png?v=1')" }}></div>
                   <div className="service-overlay">
                     <h3 className="text-2xl text-white font-semibold uppercase mb-4">Autres Services</h3>
-                    <p className="text-sm text-white text-center mb-6 px-4">MR Partners propose des solutions d'audit personnalisées et efficaces.</p>
-                    <a href="/autres-services" className="cta-button bg-amber-500 text-white text-sm font-medium py-2 px-8 rounded-full transition">
+                    <p className="text-sm text-white text-center mb-6 px-4">MR Partners propose des solutions d&apos;audit personnalisées et efficaces.</p>
+                    <Link href="/autres-services" className="cta-button bg-amber-500 text-white text-sm font-medium py-2 px-8 rounded-full transition">
                       <span className="cta-button-text">SAVOIR PLUS</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="service-label bg-white border-l-2 border-r-2 border-b-2 border-amber-500 text-center py-4">
@@ -161,9 +162,9 @@ export default function Home() {
 
             {/* Contact Button */}
             <div className="flex justify-end py-5 bg-gray-50">
-              <a href="/contact" className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg text-sm font-semibold transition shadow-md hover:shadow-lg">
+              <Link href="/contact" className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg text-sm font-semibold transition shadow-md hover:shadow-lg">
                 Nous contacter
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -214,9 +215,9 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl text-white font-bold mb-2">Prêt à sécuriser votre avenir financier ?</h2>
               <p className="text-lg text-gray-200">Nos experts sont à votre disposition pour un premier conseil personnalisé.</p>
             </div>
-            <a href="/contact" className="bg-amber-500 hover:bg-amber-600 text-white px-10 py-4 rounded-lg text-base font-bold transition shadow-xl hover:shadow-2xl shrink-0">
+            <Link href="/contact" className="bg-amber-500 hover:bg-amber-600 text-white px-10 py-4 rounded-lg text-base font-bold transition shadow-xl hover:shadow-2xl shrink-0">
               Contactez-nous
-            </a>
+            </Link>
           </div>
         </section>
 

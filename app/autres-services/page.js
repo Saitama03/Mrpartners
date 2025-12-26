@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function AutresServices() {
   return (
     <>
       <Head>
-        <title>Autres Services - MR Partners - Cabinet d'expertise comptable</title>
+        <title>Autres Services - MR Partners - Cabinet d&apos;expertise comptable</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -16,16 +17,16 @@ export default function AutresServices() {
         <div className="max-w-7xl mx-auto px-6 lg:px-16">
           <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0 flex items-center">
-              <a href="/" className="logo-link">
+              <Link href="/" className="logo-link">
                 <img src="/logo.jpg" alt="MR Partners Logo" className="h-12 w-auto transition-transform duration-200 ease-out origin-left hover:scale-105" />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:flex space-x-10">
-              <a href="/" className="text-gray-600 hover:text-blue-500 transition text-sm">Accueil</a>
-              <a href="/aboutus" className="text-gray-600 hover:text-blue-500 transition text-sm">À propos</a>
-              <a href="/#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</a>
-              <a href="/#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</a>
-              <a href="/contact" className="text-gray-600 hover:text-blue-500 transition text-sm">Contact</a>
+              <Link href="/" className="text-gray-600 hover:text-blue-500 transition text-sm">Accueil</Link>
+              <Link href="/aboutus" className="text-gray-600 hover:text-blue-500 transition text-sm">À propos</Link>
+              <Link href="/#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</Link>
+              <Link href="/#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</Link>
+              <Link href="/contact" className="text-gray-600 hover:text-blue-500 transition text-sm">Contact</Link>
             </div>
             <button className="md:hidden text-gray-700" id="mobile-menu-btn">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,11 +37,11 @@ export default function AutresServices() {
         </div>
         <div className="hidden md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <a href="/" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Accueil</a>
-            <a href="/aboutus" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">À propos</a>
+            <Link href="/" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Accueil</Link>
+            <Link href="/aboutus" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">À propos</Link>
             <a href="#services" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Services</a>
             <a href="#specialisations" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Spécialisations</a>
-            <a href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Contact</a>
+            <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Contact</Link>
           </div>
         </div>
       </nav>
@@ -52,8 +53,8 @@ export default function AutresServices() {
           <div className="max-w-6xl mx-auto px-6">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Autres Services</h1>
             <p className="text-lg md:text-xl text-blue-100 max-w-3xl">
-              Au-delà de la comptabilité, de la fiscalité et de l'audit, nous vous accompagnons sur des besoins spécifiques : 
-              gestion, pilotage, création d'entreprise et solutions sur-mesure.
+              Au-delà de la comptabilité, de la fiscalité et de l&apos;audit, nous vous accompagnons sur des besoins spécifiques : 
+              gestion, pilotage, création d&apos;entreprise et solutions sur-mesure.
             </p>
           </div>
         </section>
@@ -68,7 +69,7 @@ export default function AutresServices() {
                 décisions. Notre approche reste orientée résultats, pragmatique et pédagogique.
               </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-700 text-base">
-                <li>Création et reprise d'entreprise (choix de la forme, immatriculation)</li>
+                <li>Création et reprise d&apos;entreprise (choix de la forme, immatriculation)</li>
                 <li>Prévisionnels, budgets et plans de trésorerie</li>
                 <li>Organisation administrative et digitalisation</li>
                 <li>Accompagnement au financement (banques, investisseurs)</li>
@@ -111,9 +112,9 @@ export default function AutresServices() {
           <div className="backgroundimg w-full h-full absolute inset-0 opacity-40" style={{ backgroundImage: "url('/contact_bg.png?v=1')" }}></div>
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto">
             <h2 className="text-2xl md:text-3xl text-white font-normal mb-4 md:mb-0">Un besoin spécifique ?</h2>
-            <a href="/contact" className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 py-2 rounded text-sm transition">
+            <Link href="/contact" className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 py-2 rounded text-sm transition">
               Parlons-en
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -140,7 +141,7 @@ export default function AutresServices() {
                 mobileMenu.classList.toggle('hidden');
               });
             }
-            document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
               anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));

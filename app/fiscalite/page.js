@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Fiscalite() {
   return (
     <>
       <Head>
-        <title>Fiscalité - MR Partners - Cabinet d'expertise comptable</title>
+        <title>Fiscalité - MR Partners - Cabinet d&apos;expertise comptable</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -16,16 +17,16 @@ export default function Fiscalite() {
         <div className="max-w-7xl mx-auto px-6 lg:px-16">
           <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0 flex items-center">
-              <a href="/" className="logo-link">
+              <Link href="/" className="logo-link">
                 <img src="/logo.jpg" alt="MR Partners Logo" className="h-12 w-auto transition-transform duration-200 ease-out origin-left hover:scale-105" />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:flex space-x-10">
-              <a href="/" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Accueil</a>
-              <a href="/aboutus" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">À propos</a>
-              <a href="/#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</a>
-              <a href="/#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</a>
-              <a href="/contact" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Contact</a>
+              <Link href="/" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Accueil</Link>
+              <Link href="/aboutus" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">À propos</Link>
+              <Link href="/#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</Link>
+              <Link href="/#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</Link>
+              <Link href="/contact" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Contact</Link>
             </div>
             <button className="md:hidden text-gray-700" id="mobile-menu-btn">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,11 +37,11 @@ export default function Fiscalite() {
         </div>
         <div className="hidden md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <a href="/" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Accueil</a>
-            <a href="/aboutus" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">À propos</a>
-            <a href="/#services" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Services</a>
-            <a href="/#specialisations" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Spécialisations</a>
-            <a href="/contact" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Contact</a>
+            <Link href="/" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Accueil</Link>
+            <Link href="/aboutus" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">À propos</Link>
+            <Link href="/#services" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Services</Link>
+            <Link href="/#specialisations" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Spécialisations</Link>
+            <Link href="/contact" className="block px-3 py-2 text-blue-900 hover:bg-amber-50 hover:text-amber-600 text-sm font-medium">Contact</Link>
           </div>
         </div>
       </nav>
@@ -147,9 +148,9 @@ export default function Fiscalite() {
               <h2 className="text-2xl md:text-3xl text-white font-bold mb-2">Besoin d&apos;un conseil fiscal ?</h2>
               <p className="text-base text-gray-200">Nos experts sont à votre disposition pour sécuriser vos intérêts.</p>
             </div>
-            <a href="/contact" className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg text-sm font-bold transition shadow-xl hover:shadow-2xl shrink-0">
+            <Link href="/contact" className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-lg text-sm font-bold transition shadow-xl hover:shadow-2xl shrink-0">
               Échanger avec un expert
-            </a>
+            </Link>
           </div>
         </section>
 
@@ -176,7 +177,7 @@ export default function Fiscalite() {
                 mobileMenu.classList.toggle('hidden');
               });
             }
-            document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
               anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));

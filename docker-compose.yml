@@ -1,0 +1,14 @@
+name: mrpartners
+services:
+  web:
+    image: mrpartners_web:${TAG:-1.0.0}
+    container_name: mrpartners_web
+    restart: always
+    build:
+      context: .
+      target: runner
+      args:
+        ALPINE_VERSION: ${ALPINE_VERSION:-3.20}
+        NODE_VERSION: ${NODE_VERSION:-23.1}
+    ports:
+      - "${WEB_PORT:-3000}:3000"

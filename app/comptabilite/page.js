@@ -1,10 +1,11 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Comptabilite() {
   return (
     <>
       <Head>
-        <title>Comptabilité - MR Partners - Cabinet d'expertise comptable</title>
+        <title>Comptabilité - MR Partners - Cabinet d&apos;expertise comptable</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -16,16 +17,16 @@ export default function Comptabilite() {
         <div className="max-w-7xl mx-auto px-6 lg:px-16">
           <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0 flex items-center">
-              <a href="/" className="logo-link">
+              <Link href="/" className="logo-link">
                 <img src="/logo.jpg" alt="MR Partners Logo" className="h-12 w-auto transition-transform duration-200 ease-out origin-left hover:scale-105" />
-              </a>
+              </Link>
             </div>
             <div className="hidden md:flex space-x-10">
-              <a href="/" className="text-gray-600 hover:text-blue-500 transition text-sm">Accueil</a>
-              <a href="/aboutus" className="text-gray-600 hover:text-blue-500 transition text-sm">À propos</a>
-              <a href="/#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</a>
-              <a href="/#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</a>
-              <a href="/contact" className="text-gray-600 hover:text-blue-500 transition text-sm">Contact</a>
+              <Link href="/" className="text-gray-600 hover:text-blue-500 transition text-sm">Accueil</Link>
+              <Link href="/aboutus" className="text-gray-600 hover:text-blue-500 transition text-sm">À propos</Link>
+              <Link href="/#services" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Services</Link>
+              <Link href="/#specialisations" className="text-blue-900 hover:text-amber-600 transition text-sm font-medium">Spécialisations</Link>
+              <Link href="/contact" className="text-gray-600 hover:text-blue-500 transition text-sm">Contact</Link>
             </div>
             <button className="md:hidden text-gray-700" id="mobile-menu-btn">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,11 +37,11 @@ export default function Comptabilite() {
         </div>
         <div className="hidden md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-            <a href="/" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Accueil</a>
-            <a href="/aboutus" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">À propos</a>
+            <Link href="/" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Accueil</Link>
+            <Link href="/aboutus" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">À propos</Link>
             <a href="#services" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Services</a>
             <a href="#specialisations" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Spécialisations</a>
-            <a href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Contact</a>
+            <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-100 text-sm">Contact</Link>
           </div>
         </div>
       </nav>
@@ -53,7 +54,7 @@ export default function Comptabilite() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Comptabilité</h1>
             <p className="text-lg md:text-xl text-blue-100 max-w-3xl">
               Tenue et révision comptable, comptes annuels, déclarations de TVA et reporting clair. 
-              MR Partners met 20 ans d'expérience à votre service pour une comptabilité fiable et utile à la décision.
+              MR Partners met 20 ans d&apos;expérience à votre service pour une comptabilité fiable et utile à la décision.
             </p>
           </div>
         </section>
@@ -64,7 +65,7 @@ export default function Comptabilite() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl text-black font-normal">Une comptabilité claire et proactive</h2>
               <p className="text-gray-700 text-base leading-relaxed">
-                En tant que cabinet d'expertise comptable certifié ITAA, nous assurons une tenue rigoureuse de vos comptes
+                En tant que cabinet d&apos;expertise comptable certifié ITAA, nous assurons une tenue rigoureuse de vos comptes
                 et transformons vos données financières en indicateurs opérationnels. Notre équipe accompagne PME, 
                 indépendants et professions libérales, avec une approche orientée résultats et conformité.
               </p>
@@ -100,7 +101,7 @@ export default function Comptabilite() {
               </div>
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold mb-4">3</div>
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">Suivi & Clôture</h4>
+                <h4 className="text-xl font-semibold text-gray-800 mb-2">Suivi &amp; Clôture</h4>
                 <p className="text-gray-600 text-sm">Tenue régulière, reporting et assistance à la clôture des comptes.</p>
               </div>
             </div>
@@ -111,10 +112,10 @@ export default function Comptabilite() {
         <section className="relative h-64 flex items-center justify-between px-6 md:px-16 bg-gradient-to-r from-gray-900 to-gray-700">
           <div className="backgroundimg w-full h-full absolute inset-0 opacity-40" style={{ backgroundImage: "url('/contact_bg.png?v=1')" }}></div>
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl text-white font-normal mb-4 md:mb-0">Besoin d'une comptabilité fiable ?</h2>
-            <a href="/contact" className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 py-2 rounded text-sm transition">
+            <h2 className="text-2xl md:text-3xl text-white font-normal mb-4 md:mb-0">Besoin d&apos;une comptabilité fiable ?</h2>
+            <Link href="/contact" className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-6 py-2 rounded text-sm transition">
               Demander un devis
-            </a>
+            </Link>
           </div>
         </section>
 
