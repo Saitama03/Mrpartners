@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-dm-sans);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,5 +22,155 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Professional Accounting Firm Styles */
+
+/* Service Card Animations - PRESERVED EXACTLY AS IS */
+.service-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.service-image-wrapper {
+  perspective: 1000px;
+  position: relative;
+}
+
+.service-label {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.service-label::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: #f59e0b;
+  transition: height 0.5s ease;
+  z-index: 0;
+}
+
+.service-card:hover .service-label::before {
+  height: 100%;
+}
+
+.service-label-text {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease 0.2s;
+}
+
+.service-card:hover .service-label-text {
+  color: white;
+}
+
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 58, 138, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  transform-origin: top center;
+  transform: rotateX(-90deg);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.3s ease;
+  backface-visibility: hidden;
+}
+
+.service-card:hover .service-overlay {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+/* CTA Button Styles */
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: #f59e0b;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.cta-button::before,
+.cta-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: white;
+  transition: width 0.5s ease, left 0.5s ease;
+  z-index: -1;
+}
+
+.cta-button::before {
+  top: 0;
+  transform-origin: center;
+}
+
+.cta-button::after {
+  top: 0;
+  transform-origin: center;
+}
+
+.cta-button:hover::before {
+  left: 0;
+  width: 50%;
+}
+
+.cta-button:hover::after {
+  left: 50%;
+  width: 50%;
+}
+
+.cta-button-text {
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease 0.2s;
+}
+
+.cta-button:hover .cta-button-text {
+  color: #f59e0b;
+}
+
+/* Background Image Utility */
+.backgroundimg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Form Elements */
+input[type="checkbox"] {
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3);
+}
+
+/* Smooth Transitions */
+a,
+button {
+  transition: all 0.2s ease;
 }
