@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MR Partners — Site vitrine (Next.js)
 
-## Getting Started
+Site professionnel pour MR Partners, cabinet d’expertise comptable (fiscal) certifié ITAA.
 
-First, run the development server:
+Le site met en avant les services de comptabilité, fiscalité et audit, avec une page d’accueil soignée, une navigation claire, des sections dédiées et des assets de marque.
+
+## Fonctionnalités
+
+- Page d’accueil complète (Hero, Services, Spécialisations, Contact CTA, Footer)
+- Pages dédiées: À propos, Comptabilité, Fiscalité, Audit, Autres services, Contact
+- Design responsive et animations légères (cartes services, CTA)
+- Optimisation des polices via `next/font` (Inter, Outfit) et base CSS professionnelle (DM Sans)
+- Assets de marque et d’illustration (public/)
+
+## Pile technique
+
+- Next.js 16 (App Router)
+- React 19
+- Tailwind CSS 4 (via @tailwindcss/postcss)
+- ESLint (Core Web Vitals)
+
+## Scripts
+
+- `npm run dev` — démarre le serveur de développement
+- `npm run build` — build de production
+- `npm run start` — démarre le serveur en production
+- `npm run lint` — linting du code
+
+## Démarrage local
+
+1. Installer les dépendances:
+
+```bash
+npm install
+```
+
+2. Lancer le serveur de développement:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Ouvrir http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Structure du projet (extrait)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  aboutus/
+  audit/
+  autres-services/
+  comptabilite/
+  contact/
+  fiscalite/
+  layout.js
+  page.js
+public/
+  logo.jpg
+  hero_main.png
+  audit.png
+  accounting.png
+  taxation.png
+  contact_bg.png
+```
 
-## Learn More
+## Configuration
 
-To learn more about Next.js, take a look at the following resources:
+- `eslint.config.mjs` — configuration ESLint (Core Web Vitals)
+- `postcss.config.mjs` — configuration PostCSS pour Tailwind CSS 4
+- `next.config.mjs` — configuration Next.js
+- `jsconfig.json` — alias `@/*` vers la racine du projet
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Déploiement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Le projet peut être déployé sur Vercel, Netlify ou toute autre plateforme compatible Next.js.
 
-## Deploy on Vercel
+- Build de production: `npm run build`
+- Lancement: `npm run start`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licence
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© MR Partners. Tous droits réservés.

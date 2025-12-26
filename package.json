@@ -1,7 +1,8 @@
 {
-  "name": "mrpartner",
-  "version": "0.1.0",
+  "name": "mrpartners-site",
+  "version": "1.0.0",
   "private": true,
+  "description": "Site vitrine MR Partners (Next.js)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
